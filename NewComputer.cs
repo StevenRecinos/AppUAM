@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace App_Framework
 {
-    public partial class NewComputer : Form
+    public partial class Form_NewComputer : Form
     {
-        public NewComputer()
+        public Form_NewComputer()
         {
             InitializeComponent();
+        }
+
+        private void Form_NewComputer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

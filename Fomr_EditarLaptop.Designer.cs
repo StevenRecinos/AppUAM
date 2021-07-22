@@ -32,20 +32,24 @@ namespace App
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.GB_editLaptop = new System.Windows.Forms.GroupBox();
             this.btn_listo = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.txt_editpc_idaum = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label_ID = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_uamCode = new System.Windows.Forms.Label();
+            this.txt_newAumCode = new System.Windows.Forms.TextBox();
             this.GB_editLaptop.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(14, 145);
+            this.btn_cancelar.Location = new System.Drawing.Point(14, 211);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(153, 42);
             this.btn_cancelar.TabIndex = 0;
@@ -55,102 +59,142 @@ namespace App
             // 
             // GB_editLaptop
             // 
-            this.GB_editLaptop.Controls.Add(this.btn_listo);
-            this.GB_editLaptop.Controls.Add(this.textBox4);
-            this.GB_editLaptop.Controls.Add(this.textBox3);
-            this.GB_editLaptop.Controls.Add(this.textBox2);
-            this.GB_editLaptop.Controls.Add(this.txt_editpc_idaum);
-            this.GB_editLaptop.Controls.Add(this.label3);
+            this.GB_editLaptop.Controls.Add(this.comboBox4);
             this.GB_editLaptop.Controls.Add(this.label2);
             this.GB_editLaptop.Controls.Add(this.label1);
-            this.GB_editLaptop.Controls.Add(this.label_ID);
+            this.GB_editLaptop.Controls.Add(this.comboBox2);
+            this.GB_editLaptop.Controls.Add(this.comboBox1);
+            this.GB_editLaptop.Controls.Add(this.label3);
+            this.GB_editLaptop.Controls.Add(this.textBox1);
+            this.GB_editLaptop.Controls.Add(this.label5);
+            this.GB_editLaptop.Controls.Add(this.comboBox3);
+            this.GB_editLaptop.Controls.Add(this.label4);
+            this.GB_editLaptop.Controls.Add(this.lbl_uamCode);
+            this.GB_editLaptop.Controls.Add(this.txt_newAumCode);
+            this.GB_editLaptop.Controls.Add(this.btn_listo);
             this.GB_editLaptop.Controls.Add(this.btn_cancelar);
             this.GB_editLaptop.Location = new System.Drawing.Point(12, 10);
             this.GB_editLaptop.Name = "GB_editLaptop";
-            this.GB_editLaptop.Size = new System.Drawing.Size(354, 192);
+            this.GB_editLaptop.Size = new System.Drawing.Size(354, 263);
             this.GB_editLaptop.TabIndex = 2;
             this.GB_editLaptop.TabStop = false;
             this.GB_editLaptop.Text = "Edit";
             // 
             // btn_listo
             // 
-            this.btn_listo.Location = new System.Drawing.Point(189, 145);
+            this.btn_listo.Location = new System.Drawing.Point(189, 211);
             this.btn_listo.Name = "btn_listo";
             this.btn_listo.Size = new System.Drawing.Size(153, 42);
             this.btn_listo.TabIndex = 9;
             this.btn_listo.Text = "DONE";
             this.btn_listo.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // comboBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(123, 53);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(207, 20);
-            this.textBox4.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(123, 103);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(207, 20);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(123, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(207, 20);
-            this.textBox2.TabIndex = 6;
-            // 
-            // txt_editpc_idaum
-            // 
-            this.txt_editpc_idaum.Location = new System.Drawing.Point(123, 28);
-            this.txt_editpc_idaum.Name = "txt_editpc_idaum";
-            this.txt_editpc_idaum.Size = new System.Drawing.Size(207, 20);
-            this.txt_editpc_idaum.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "SERIAL NUMBER";
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(139, 91);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(206, 21);
+            this.comboBox4.TabIndex = 22;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 81);
+            this.label2.Location = new System.Drawing.Point(11, 174);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "MODEL";
+            this.label2.Size = new System.Drawing.Size(77, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Processor type";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 55);
+            this.label1.Location = new System.Drawing.Point(11, 147);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "BRAND";
+            this.label1.Size = new System.Drawing.Size(88, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Operating system";
             // 
-            // label_ID
+            // comboBox2
             // 
-            this.label_ID.AutoSize = true;
-            this.label_ID.Location = new System.Drawing.Point(15, 30);
-            this.label_ID.Name = "label_ID";
-            this.label_ID.Size = new System.Drawing.Size(45, 13);
-            this.label_ID.TabIndex = 1;
-            this.label_ID.Text = "ID UAM";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(139, 171);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(206, 21);
+            this.comboBox2.TabIndex = 16;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(139, 144);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(206, 21);
+            this.comboBox1.TabIndex = 13;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(11, 67);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Model";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(139, 118);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(206, 20);
+            this.textBox1.TabIndex = 21;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(11, 94);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 13);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Computer type";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(139, 64);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(206, 21);
+            this.comboBox3.TabIndex = 18;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(11, 121);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Serial number";
+            // 
+            // lbl_uamCode
+            // 
+            this.lbl_uamCode.AutoSize = true;
+            this.lbl_uamCode.Location = new System.Drawing.Point(11, 38);
+            this.lbl_uamCode.Name = "lbl_uamCode";
+            this.lbl_uamCode.Size = new System.Drawing.Size(59, 13);
+            this.lbl_uamCode.TabIndex = 12;
+            this.lbl_uamCode.Text = "UAM Code";
+            // 
+            // txt_newAumCode
+            // 
+            this.txt_newAumCode.Location = new System.Drawing.Point(139, 38);
+            this.txt_newAumCode.Name = "txt_newAumCode";
+            this.txt_newAumCode.Size = new System.Drawing.Size(206, 20);
+            this.txt_newAumCode.TabIndex = 14;
             // 
             // Fomr_EditarLaptop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(378, 212);
+            this.ClientSize = new System.Drawing.Size(378, 285);
             this.Controls.Add(this.GB_editLaptop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Fomr_EditarLaptop";
@@ -166,14 +210,18 @@ namespace App
 
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.GroupBox GB_editLaptop;
-        private System.Windows.Forms.Label label_ID;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_listo;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox txt_editpc_idaum;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_uamCode;
+        private System.Windows.Forms.TextBox txt_newAumCode;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App_Framework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,12 +18,14 @@ namespace App
 
         private void btn_modificarlaptop_Click(object sender, EventArgs e)
         {
-            Fomr_EditarLaptop f2 = new Fomr_EditarLaptop();
-            f2.ShowDialog();
+            Fomr_EditarLaptop f1 = new Fomr_EditarLaptop();
+            f1.ShowDialog();
         }
 
         private void btn_nuevaLaptop_Click(object sender, EventArgs e)
         {
+            Form_NewComputer f2 = new Form_NewComputer();
+            f2.ShowDialog();
 
         }
     }
