@@ -26,5 +26,23 @@ namespace App_Framework
         {
             this.Close();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form_newModel_NewComputer xnewmodel = new Form_newModel_NewComputer();
+            xnewmodel.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form_NewSO_NewComputer xnewsystem = new Form_NewSO_NewComputer();
+            xnewsystem.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form_newProcessor_NewComputer xnewprocessor = new Form_newProcessor_NewComputer();
+            xnewprocessor.ShowDialog();
+        }
     }
 }

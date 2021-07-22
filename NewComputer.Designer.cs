@@ -47,6 +47,8 @@ namespace App_Framework
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +87,8 @@ namespace App_Framework
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.comboBox5);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.comboBox4);
@@ -101,7 +105,7 @@ namespace App_Framework
             this.groupBox1.Controls.Add(this.txt_newAumCode);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(336, 279);
+            this.groupBox1.Size = new System.Drawing.Size(336, 297);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "New Computer";
@@ -175,7 +179,7 @@ namespace App_Framework
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(10, 217);
+            this.button1.Location = new System.Drawing.Point(10, 238);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 45);
             this.button1.TabIndex = 12;
@@ -185,7 +189,7 @@ namespace App_Framework
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(171, 217);
+            this.button2.Location = new System.Drawing.Point(171, 238);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 45);
             this.button2.TabIndex = 13;
@@ -200,6 +204,7 @@ namespace App_Framework
             this.button3.TabIndex = 14;
             this.button3.Text = "New model";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -209,6 +214,7 @@ namespace App_Framework
             this.button4.TabIndex = 15;
             this.button4.Text = "New Operating system";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button6
             // 
@@ -218,12 +224,30 @@ namespace App_Framework
             this.button6.TabIndex = 17;
             this.button6.Text = "New processor type";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 203);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Type computer";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(120, 200);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(206, 21);
+            this.comboBox5.TabIndex = 14;
             // 
             // Form_NewComputer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 306);
+            this.ClientSize = new System.Drawing.Size(536, 321);
             this.ControlBox = false;
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
@@ -260,5 +284,7 @@ namespace App_Framework
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox5;
     }
 }
