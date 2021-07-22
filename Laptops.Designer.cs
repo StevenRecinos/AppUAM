@@ -1,7 +1,7 @@
 ﻿
 namespace App
 {
-    partial class Form_Laptops
+    partial class Form_Computer
     {
         /// <summary>
         /// Required designer variable.
@@ -105,7 +105,7 @@ namespace App
             this.btn_modificarlaptop.UseVisualStyleBackColor = true;
             this.btn_modificarlaptop.Click += new System.EventHandler(this.btn_modificarlaptop_Click);
             // 
-            // Form_Laptops
+            // Form_Computer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,7 +118,7 @@ namespace App
             this.Controls.Add(this.btn_laptopsasignadas);
             this.Controls.Add(this.DGV_ASIGNADAS);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form_Laptops";
+            this.Name = "Form_Computer";
             this.Text = "Laptops";
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ASIGNADAS)).EndInit();
             this.ResumeLayout(false);

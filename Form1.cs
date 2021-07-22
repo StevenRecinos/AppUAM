@@ -140,7 +140,7 @@ namespace App
             botonmostrar(sender, Color.FromArgb(241, 196, 20));
             texto("Computer");
             // abrir form hijo
-            abrirForm<Form_Laptops>();
+            abrirForm<Form_Computer>();
 
         }
 

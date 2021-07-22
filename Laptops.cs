@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace App
 {
-    public partial class Form_Laptops : Form
+    public partial class Form_Computer : Form
     {
-        public Form_Laptops()
+        public Form_Computer()
         {
             InitializeComponent();
         }
